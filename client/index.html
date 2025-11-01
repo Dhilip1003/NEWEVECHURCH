@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Praise Carmel Prayer House - A place of worship and prayer">
+    <title>Praise Carmel Prayer House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="church-name">Praise Carmel Prayer House</h1>
+            <p class="church-tagline">A Place of Worship, Prayer & Praise</p>
+        </div>
+    </header>
+
+    <!-- Image Slider Section -->
+    <section class="slider-section">
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&q=80');"></div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1200&q=80');"></div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80');"></div>
+                <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1200&q=80');"></div>
+            </div>
+            <div class="slider-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+                <span class="dot" data-slide="3"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <div class="container">
+            <h2 class="section-title">Welcome to Praise Carmel Prayer House</h2>
+            <div class="welcome-content">
+                <p class="welcome-text">
+                    We are a community of believers committed to spreading the love of Christ 
+                    through worship, prayer, and fellowship. Join us as we gather together to 
+                    praise God and grow in faith.
+                </p>
+                <p class="welcome-text">
+                    Whether you're visiting for the first time or have been part of our family 
+                    for years, we welcome you with open arms. Come experience the presence of 
+                    God in a place where hearts are lifted, lives are transformed, and souls 
+                    find peace.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section class="donation-section">
+        <div class="container">
+            <h2 class="section-title">Support Our Ministry</h2>
+            <p class="donation-description">
+                Your generous contributions help us continue our mission of spreading the Gospel 
+                and serving our community. Every donation makes a difference.
+            </p>
+            
+            <div class="donation-content">
+                <div class="donation-card">
+                    <h3>Google Pay</h3>
+                    <p>Scan the QR code to donate via Google Pay</p>
+                    
+                    <div id="donation-button-container">
+                        <button class="donate-button" id="loadQRBtn">Load GPay QR Code</button>
+                    </div>
+                    
+                    <div id="qr-loading" class="qr-loading hidden">
+                        <div class="spinner"></div>
+                        <p>Loading QR Code...</p>
+                    </div>
+                    
+                    <div id="qr-container" class="qr-container hidden">
+                        <div class="qr-code-placeholder">
+                            <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="200" height="200" fill="white"/>
+                                <rect x="10" y="10" width="40" height="40" fill="black"/>
+                                <rect x="150" y="10" width="40" height="40" fill="black"/>
+                                <rect x="10" y="150" width="40" height="40" fill="black"/>
+                                <rect x="70" y="70" width="60" height="60" fill="black"/>
+                                <rect x="25" y="25" width="10" height="10" fill="white"/>
+                                <rect x="165" y="25" width="10" height="10" fill="white"/>
+                                <rect x="25" y="165" width="10" height="10" fill="white"/>
+                                <rect x="80" y="80" width="40" height="40" fill="white"/>
+                                <text x="100" y="100" font-size="12" fill="#667eea" text-anchor="middle" dy="5">GPay QR</text>
+                            </svg>
+                        </div>
+                        <p class="qr-instruction">
+                            Scan this QR code with Google Pay app to make a donation
+                        </p>
+                        <button class="close-qr-button" id="closeQRBtn">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Visit Us</h2>
+            <div class="contact-content">
+                <div class="address-card">
+                    <h3>Location</h3>
+                    <p class="address-text" id="churchAddress">Praise Carmel Prayer House, Main Street, City, State, ZIP Code</p>
+                    <a href="#" id="googleMapsLink" target="_blank" rel="noopener noreferrer" class="map-link">
+                        <span class="map-icon">📍</span>
+                        Open in Google Maps
+                    </a>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Contact Information</h3>
+                    <div class="contact-info">
+                        <p><strong>Phone:</strong> (123) 456-7890</p>
+                        <p><strong>Email:</strong> info@praisecarmel.com</p>
+                        <p><strong>Service Times:</strong></p>
+                        <ul>
+                            <li>Sunday: 10:00 AM - 12:00 PM</li>
+                            <li>Wednesday: 7:00 PM - 8:30 PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; <span id="currentYear"></span> Praise Carmel Prayer House. All rights reserved.</p>
+            <p class="footer-message">May God bless you abundantly!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
